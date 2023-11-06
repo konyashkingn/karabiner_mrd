@@ -13,8 +13,8 @@
         
         {
           "type": "basic", "description": "Command+Tab is Windows+Ta space",
-          "from": {"key_code": "left_shift", "modifiers": {"mandatory": ["spacebar"]}},
-          "to":  [{"key_code": "left_control", "modifiers": ["spacebar"]}],
+          "from": {"key_code": "spacebar", "modifiers": {"mandatory": ["left_shift"]}},
+          "to":  [{"key_code": "spacebar", "modifiers": ["left_control"]}],
           "conditions": [
             {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
           ]
