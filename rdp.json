@@ -13,7 +13,7 @@
         
         {
           "type": "basic", "description": "Ctrl+probel",
-          "from": { "key_code": "spacebar" },
+          "from": { "key_code": "space" },
           "to": [ { "key_code": "space" } ],
           "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
         },
