@@ -14,7 +14,7 @@
         {
           "type": "basic", "description": "Command+Tab is Windows+Ta space",
           "from": {"key_code": "left_shift", "modifiers": {"mandatory": ["spacebar"]}},
-          "to":  [{"key_code": "left_control", "modifiers": ["spaceber"]}],
+          "to":  [{"key_code": "left_control", "modifiers": ["spacebar"]}],
           "conditions": [
             {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
           ]
