@@ -1,0 +1,67 @@
+{
+  "title": "DWE",
+  "rules": [
+    {
+      "description": "RDP",
+      "manipulators": [
+        {
+          "type": "basic", "description": "Completely disabled the windows key (Startmenu)",
+          "from": { "key_code": "left_command" },
+          "to": [ { "key_code": "left_control" } ],
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
+        },
+        {
+          "type": "basic", "description": "Ctrl+probel",
+          "from": { "key_code": "spacebar" },
+          "to": [ { "key_code": "space" } ],
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
+        },
+        {
+          "type": "basic", "description": "All command are mapped to CTRL",
+          "from": { "any": "key_code", "modifiers": { "mandatory": [ "left_command" ] } },
+          "to": [ { "any": "key_code", "modifiers":                [ "left_control" ] } ],
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
+        },
+
+        {
+          "type": "basic", "description": "Command Q is Alt F4",
+          "from": { "key_code": "q", "modifiers": { "mandatory": [ "left_control" ] } },
+          "to": [ { "key_code": "f4", "modifiers":               [ "fn", "left_option" ] } ],
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
+        },
+       
+        {
+          "type": "basic", "description": "Command+Tab is Windows+Tab",
+          "from": {"key_code": "tab", "modifiers": {"mandatory": ["left_control"]}},
+          "to":  [{"key_code": "tab", "modifiers": ["option"]}],
+          "conditions": [
+            {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
+          ]
+        },
+
+        {
+          "type": "basic", "description": "Command+m is Windows+m",
+          "from": {"key_code": "m", "modifiers": {"mandatory": ["left_control"]}},
+          "to":  [{"key_code": "down_arrow", "modifiers": ["left_gui"]}],
+          "conditions": [
+            {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
+          ]
+        },
+
+        {
+          "type": "basic", "description": "Option i is Alt Ins",
+          "from": { "key_code": "i", "modifiers": { "mandatory": [ "option" ] } },
+          "to": [ { "key_code": "insert", "modifiers":                [ "option" ] } ],
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
+        },
+        {
+          "type": "basic", "description": "Option d is Alt Entf",
+          "from": { "key_code": "d", "modifiers": { "mandatory": [ "option" ] } },
+          "to": [ { "key_code": "delete_forward", "modifiers":                [ "option" ] } ],
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
+        }
+
+      ]
+    }
+  ]
+}
