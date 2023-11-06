@@ -12,7 +12,7 @@
         },
         
         {
-          "type": "basic", "description": "Space cmd",
+          "type": "basic", "description": "Command+Tab is Windows+Ta space",
           "from": {"key_code": "spacebar", "modifiers": {"mandatory": ["left_command"]}},
           "to":  [{"key_code": "spacebar", "modifiers": ["left_control"]}],
           "conditions": [
