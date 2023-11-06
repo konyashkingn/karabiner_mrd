@@ -13,8 +13,8 @@
         
         {
           "type": "basic", "description": "Space cmd",
-          "from": {"key_code": "space", "modifiers": {"mandatory": ["left_command"]}},
-          "to":  [{"key_code": "space", "modifiers": ["left_control"]}],
+          "from": {"key_code": "spacebar", "modifiers": {"mandatory": ["left_command"]}},
+          "to":  [{"key_code": "spacebar", "modifiers": ["left_control"]}],
           "conditions": [
             {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
           ]
