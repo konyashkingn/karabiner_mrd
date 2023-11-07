@@ -29,15 +29,15 @@
 
         {
           "type": "basic", "description": "Shift-Command is Shift-Control",
-          "from": {"key_code": "left_shift", "modifiers": {"mandatory": ["left_command"]}},
-          "to":  [{"key_code": "left_shift", "lazy":true , "modifiers": ["left_control"]}],
+          "from": {"any": "key_code", "modifiers": {"mandatory": ["left_shift, left_command"]}},
+          "to":  [{"any": "key_code", "modifiers": ["left_shift, left_control"]}],
           "conditions": [
             {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
           ]
         },
 
         {
-          "type": "basic", "description": "Shift-Command is Shift-Control",
+          "type": "basic", "description": "Del in keyboard Macbook",
           "from": {"key_code": "d", "modifiers": {"mandatory": ["left_shift", "left_option"]}},
           "to":  [{"key_code": "delete_forward"}],
           "conditions": [
