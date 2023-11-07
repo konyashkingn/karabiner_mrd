@@ -29,11 +29,9 @@
 
           {
           "type": "basic", "description": "Tilda change language",
-          "from": {"key_code": "f2", "modifiers": {"mandatory": ["left_gui"]}},
+          "from": {"key_code": "f2", "modifiers": {"mandatory": ["left_command"]}},
           "to":  [{"key_code": "f2", "modifiers": ["left_control"]}],
-          "conditions": [
-            {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
-          ]
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
         },
 
         {
