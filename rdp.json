@@ -10,6 +10,29 @@
           "to": [ { "key_code": "left_control" } ],
           "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
         },
+        {
+          "type": "basic",
+          "from": {
+                  "key_code": "left_shift",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "spacebar",
+                    "modifiers": {
+                      "mandatory": [
+                        "left_control"
+                      ]
+                    }
+
+                  }
+                ],
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
+        },
         
         {
           "type": "basic", "description": "Shift Space is Ctrl Space",
