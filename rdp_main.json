@@ -50,7 +50,7 @@
           "conditions": [
             {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
           ]
-        },
+        }
 
         
 
