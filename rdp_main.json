@@ -52,12 +52,7 @@
           ]
         },
 
-        {
-          "type": "basic", "description": "All command are mapped to CTRL",
-          "from": { "any": "key_code", "modifiers": { "mandatory": [ "left_command" ] } },
-          "to": [ { "any": "key_code", "modifiers":                [ "left_control" ] } ],
-          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
-        }
+        
 
       ]
     }
