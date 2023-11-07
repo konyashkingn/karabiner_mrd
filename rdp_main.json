@@ -4,6 +4,7 @@
     {
       "description": "RDP",
       "manipulators": [
+        
         {
           "type": "basic", "description": "Completely disabled the windows key (Startmenu)",
           "from": { "key_code": "left_command" },
