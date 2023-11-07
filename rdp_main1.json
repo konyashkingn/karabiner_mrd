@@ -27,11 +27,13 @@
           ]
         },
 
-         {
-          "type": "basic", "description": "Control F2",
-          "from": {"key_code": {"mandatory": ["left_command"]}}, "modifiers": {"key_code": ["f2"]}},
-          "to":  [{"key_code": {"mandatory": ["left_control"]}, "modifiers": ["f2"] }],
-          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
+          {
+          "type": "basic", "description": "Tilda change language",
+          "from": {"key_code": "f2", "modifiers": {"mandatory": ["left_gui"]}},
+          "to":  [{"key_code": "f2", "modifiers": ["left_control"]}],
+          "conditions": [
+            {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
+          ]
         },
 
         {
