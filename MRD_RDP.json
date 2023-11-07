@@ -29,8 +29,8 @@
 
         {
           "type": "basic", "description": "Shift-Command is Shift-Control",
-          "from": {"any": "key_code", "modifiers": {"mandatory": ["left_shift", "left_command"]}},
-          "to":  [{"any": "key_code", "modifiers": ["left_shift", "left_control"]}],
+          "from": {"key_code": "left_shift", "modifiers": {"mandatory": ["left_command"]}},
+          "to":  [{"key_code": "left_shift", "modifiers": ["left_control"]}],
           "conditions": [
             {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
           ]
