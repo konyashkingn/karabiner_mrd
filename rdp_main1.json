@@ -29,8 +29,8 @@
 
           {
           "type": "basic", "description": "Tilda change language",
-          "from": {"key_code": "f1", "modifiers": {"mandatory": ["left_command"]}},
-          "to":  [{"key_code": "f2", "modifiers": ["left_control"]}],
+          "from": {"key_code": ["f1", "left_command"]},
+          "to":  [{"key_code": ["f2", "left_control"]}],
           "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
         },
 
