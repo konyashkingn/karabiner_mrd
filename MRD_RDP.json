@@ -40,9 +40,7 @@
           "type": "basic", "description": "Shift-Command is Shift-Control",
           "from": {"key_code": "right_shift", "modifiers": {"mandatory": ["delete_or_backspace"]}},
           "to":  [{"key_code": "delete_forward"}],
-          "conditions": [
-            {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
-          ]
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ] } ]
         },
 
         {
