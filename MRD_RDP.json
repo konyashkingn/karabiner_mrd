@@ -30,7 +30,7 @@
         {
           "type": "basic", "description": "Shift-Command is Shift-Control",
           "from": {"key_code": "left_shift", "modifiers": {"mandatory": ["left_command"]}},
-          "to":  [{"key_code": "left_shift", "modifiers": ["left_control"]}],
+          "to":  [{"key_code": "left_shift", "lazy":true , "modifiers": ["left_control"]}],
           "conditions": [
             {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
           ]
