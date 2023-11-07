@@ -27,6 +27,15 @@
           ]
         },
 
+         {
+          "type": "basic", "description": "Control F2",
+          "from": {"key_code": "left_command", "modifiers": {"mandatory": ["F2"]}},
+          "to":  [{"key_code": "left_control", "modifiers": ["F2"]}],
+          "conditions": [
+            {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
+          ]
+        },
+
         {
           "type": "basic", "description": "Shift-Command is Shift-Control",
           "from": {"any": "key_code", "modifiers": {"mandatory": ["left_shift, left_command"]}},
