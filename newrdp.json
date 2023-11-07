@@ -38,7 +38,7 @@
 
         {
           "type": "basic", "description": "Shift-Command is Shift-Control",
-          "from": {"key_code": "left_option", "modifiers": {"mandatory": ["delete_or_backspace"]}},
+          "from": {"key_code": "left_option", "modifiers": {"mandatory": ["left_shift", "delete_or_backspace"]}},
           "to":  [{"key_code": "delete_forward"}],
           "conditions": [
             {"type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.osx\\.beta", "com\\.microsoft\\.rdc\\.macos" ]}
